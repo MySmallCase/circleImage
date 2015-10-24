@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "UIImageView+Extension.h"
 
 @interface ViewController ()
 
@@ -16,12 +17,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    UIImageView *imageView = [[UIImageView alloc] init];
+    imageView.frame = CGRectMake(100, 100, 100, 100);
+    imageView.backgroundColor = [UIColor redColor];
+//    imageView.layer.cornerRadius = 50.0f;
+//    imageView.layer.masksToBounds = YES;
+//    [imageView setRectHeader:@"http://img0.bdstatic.com/img/image/shouye/sheying1023.jpg" placeholder:@""];
+    [imageView setCircleHeader:@"http://img0.bdstatic.com/img/image/shouye/sheying1023.jpg" placeholder:nil];
+    [self.view addSubview:imageView];
+    
+    
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
 
 @end

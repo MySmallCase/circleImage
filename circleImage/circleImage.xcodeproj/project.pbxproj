@@ -15,6 +15,9 @@
 		1FF904B61BDB5FFA005EA41B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FF904B41BDB5FFA005EA41B /* LaunchScreen.storyboard */; };
 		1FF904C11BDB5FFA005EA41B /* circleImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF904C01BDB5FFA005EA41B /* circleImageTests.m */; };
 		1FF904CC1BDB5FFA005EA41B /* circleImageUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF904CB1BDB5FFA005EA41B /* circleImageUITests.m */; };
+		1FF904DD1BDB6176005EA41B /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF904DC1BDB6176005EA41B /* UIImage+Extension.m */; };
+		1FF904E01BDB6390005EA41B /* UIImageView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF904DF1BDB6390005EA41B /* UIImageView+Extension.m */; };
+		898ABBF4E831D2710978B3A5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FDD26595C5A180777A5F9AF2 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,13 @@
 		1FF904C71BDB5FFA005EA41B /* circleImageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = circleImageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FF904CB1BDB5FFA005EA41B /* circleImageUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = circleImageUITests.m; sourceTree = "<group>"; };
 		1FF904CD1BDB5FFA005EA41B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FF904DB1BDB6176005EA41B /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		1FF904DC1BDB6176005EA41B /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		1FF904DE1BDB6390005EA41B /* UIImageView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Extension.h"; sourceTree = "<group>"; };
+		1FF904DF1BDB6390005EA41B /* UIImageView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Extension.m"; sourceTree = "<group>"; };
+		51ABFCBE9CB8DABBD04B7F05 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		D81F2D9F67680BBA6582B90E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		FDD26595C5A180777A5F9AF2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				898ABBF4E831D2710978B3A5 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +89,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05AA44ABC09F6022F9B2102D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FDD26595C5A180777A5F9AF2 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1FF9049A1BDB5FFA005EA41B = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +104,8 @@
 				1FF904BF1BDB5FFA005EA41B /* circleImageTests */,
 				1FF904CA1BDB5FFA005EA41B /* circleImageUITests */,
 				1FF904A41BDB5FFA005EA41B /* Products */,
+				22CE0A40EC7EBE6FE1522ECF /* Pods */,
+				05AA44ABC09F6022F9B2102D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +122,7 @@
 		1FF904A51BDB5FFA005EA41B /* circleImage */ = {
 			isa = PBXGroup;
 			children = (
+				1FF904D91BDB6116005EA41B /* circleImage */,
 				1FF904A91BDB5FFA005EA41B /* AppDelegate.h */,
 				1FF904AA1BDB5FFA005EA41B /* AppDelegate.m */,
 				1FF904AC1BDB5FFA005EA41B /* ViewController.h */,
@@ -140,6 +162,26 @@
 			path = circleImageUITests;
 			sourceTree = "<group>";
 		};
+		1FF904D91BDB6116005EA41B /* circleImage */ = {
+			isa = PBXGroup;
+			children = (
+				1FF904DB1BDB6176005EA41B /* UIImage+Extension.h */,
+				1FF904DC1BDB6176005EA41B /* UIImage+Extension.m */,
+				1FF904DE1BDB6390005EA41B /* UIImageView+Extension.h */,
+				1FF904DF1BDB6390005EA41B /* UIImageView+Extension.m */,
+			);
+			path = circleImage;
+			sourceTree = "<group>";
+		};
+		22CE0A40EC7EBE6FE1522ECF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				51ABFCBE9CB8DABBD04B7F05 /* Pods.debug.xcconfig */,
+				D81F2D9F67680BBA6582B90E /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +189,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1FF904D01BDB5FFA005EA41B /* Build configuration list for PBXNativeTarget "circleImage" */;
 			buildPhases = (
+				661EB3BDEDE73ED34EE37AA0 /* Check Pods Manifest.lock */,
 				1FF9049F1BDB5FFA005EA41B /* Sources */,
 				1FF904A01BDB5FFA005EA41B /* Frameworks */,
 				1FF904A11BDB5FFA005EA41B /* Resources */,
+				B4F1E28D2F3DA69CB89359CD /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,6 +309,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		661EB3BDEDE73ED34EE37AA0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B4F1E28D2F3DA69CB89359CD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1FF9049F1BDB5FFA005EA41B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -273,6 +350,8 @@
 				1FF904AE1BDB5FFA005EA41B /* ViewController.m in Sources */,
 				1FF904AB1BDB5FFA005EA41B /* AppDelegate.m in Sources */,
 				1FF904A81BDB5FFA005EA41B /* main.m in Sources */,
+				1FF904DD1BDB6176005EA41B /* UIImage+Extension.m in Sources */,
+				1FF904E01BDB6390005EA41B /* UIImageView+Extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +488,7 @@
 		};
 		1FF904D11BDB5FFA005EA41B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51ABFCBE9CB8DABBD04B7F05 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = circleImage/Info.plist;
@@ -420,6 +500,7 @@
 		};
 		1FF904D21BDB5FFA005EA41B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D81F2D9F67680BBA6582B90E /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = circleImage/Info.plist;
@@ -496,6 +577,7 @@
 				1FF904D21BDB5FFA005EA41B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1FF904D31BDB5FFA005EA41B /* Build configuration list for PBXNativeTarget "circleImageTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +586,7 @@
 				1FF904D51BDB5FFA005EA41B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1FF904D61BDB5FFA005EA41B /* Build configuration list for PBXNativeTarget "circleImageUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +595,7 @@
 				1FF904D81BDB5FFA005EA41B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
